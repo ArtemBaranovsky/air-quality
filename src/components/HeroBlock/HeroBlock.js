@@ -2,8 +2,8 @@ import React from 'react';
 import './HeroBlock.scss';
 
 const HeroBlock = ({/*bgImg, */title, links, logos}) => {
-    const LogosImages = logos.map((logoItem) => <img src={logoItem} alt="partner-logo" className="hero-partners-item"/>);
-    const navItems = links.map((link) => <a href={link.href} className="hero-navigation-item">{link.title}</a> );
+    const LogosImages = logos.map((logoItem, i) => <img src={logoItem} alt="partner-logo" className="hero-partners-item" key={i}/>);
+    const navItems = links.map((link, i) => <a href={link.href} className="hero-navigation-item" key={i}>{link.title}</a> );
     // const  bgCSS = {
     //     background: `url(${bgImg})`
     // };
