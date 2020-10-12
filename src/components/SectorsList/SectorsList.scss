@@ -1,0 +1,17 @@
+.sectors {
+  padding: 50px 0;
+  &-title {
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 41px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 42px;
+  }
+  &-subtitle {
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 27px;
+    color: #FFFFFF;
+  }
+}
