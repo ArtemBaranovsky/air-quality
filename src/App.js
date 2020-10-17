@@ -4,6 +4,7 @@ import './App.scss';
 import HeroBlock from "./components/HeroBlock/HeroBlock";
 import Facts from "./components/Facts/Facts";
 import SectorsList from "./components/SectorsList/SectorsList";
+import Footer from "./components/Footer/Footer";
 import gsLogo from './assets/GC_logo.svg';
 import itnLogo from './assets/ITN_logo.svg';
 import shidLogo from './assets/shid_logo_white.svg';
@@ -83,7 +84,9 @@ function App() {
       description: "стратегии уменьшения отходов, сортировки отходов, рециклирования, повторного использования или переработки отходов; а также улучшенные методы биологической утилизации отходов, такие как анаэробная переработка отходов для производства биогаза, являются практически осуществимыми, недорогими альтернативными вариантами открытому сжиганию твердых отходов"
     },
   ];
-  console.log(sizeObj);
+  const author = "Барановским Артемом";
+  const designer = "Валерией Бубырь";
+  // console.log(sizeObj);
 
   return (
     <>
@@ -96,6 +99,7 @@ function App() {
                    subtitle="Есть много примеров успешной политики по уменьшению загрязнения воздуха в таких секторах, как транспорт, городское планирование, энергетика и промышленность:"
                    items={sectors}
       />
+      <Footer partners={partners} links={navLinks} author={author} designer={designer}/>
 
     </>
   );
