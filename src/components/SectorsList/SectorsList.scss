@@ -49,6 +49,7 @@
         background: #DADADA;
         border: 0.3px solid #000000;
         box-sizing: border-box;
+        animation: fadeIn 0.4s ease-in-out;
         &-switched {
           left: initial;
           right: 100%;
@@ -57,5 +58,14 @@
         }
       }
     }
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
